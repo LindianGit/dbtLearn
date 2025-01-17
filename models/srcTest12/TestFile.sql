@@ -13,7 +13,7 @@ WITH raw_listings_cte AS (
     FROM
         AIRBNB.RAW.raw_listings
 )
--- Select specific columns from the CTE
+-- Select specific columns from the CTE try
 SELECT
     listing_id,
     LISTING_URL,
