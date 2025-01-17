@@ -26,4 +26,3 @@ SELECT
     UPDATED_AT
 FROM
     raw_listings_cte
-LIMIT 10;
