@@ -10,7 +10,7 @@ WITH raw_hosts_cte AS (
 )
 
 SELECT
-  host_id AS host,
+  host_id,
   host_name AS name,
   IS_SUPERHOST,
   CREATED_AT,
