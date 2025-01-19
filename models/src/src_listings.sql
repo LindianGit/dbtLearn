@@ -11,9 +11,10 @@ WITH raw_listings_cte AS (
         CREATED_AT,
         UPDATED_AT
     FROM
-        AIRBNB.RAW.raw_listings
+        {{ source('airbnb', 'listings') }}
 )
--- Select specific columns from the CTE try
+
+-- Select specific columns from the CTE
 SELECT
     listing_id,
     LISTING_URL,
